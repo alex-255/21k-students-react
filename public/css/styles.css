@@ -97,6 +97,7 @@
     width: 100px;
     height: 100px;
     position: relative;
+    cursor: pointer;
   }
 
   .menu-bar .menu-bar-hamburger::after {
