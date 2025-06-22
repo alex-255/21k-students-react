@@ -193,15 +193,13 @@
   height: 100%;
   z-index: -1;
   background-color: #e74040;
-  clip-path: polygon(
-    0% 85%,
-    25% 94%,
-    50% 90%,
-    75% 90%,
-    100% 94%,
-    100% 0%,
-    0% 0%
-  );
+  clip-path: polygon(0% 85%,
+      25% 94%,
+      50% 90%,
+      75% 90%,
+      100% 94%,
+      100% 0%,
+      0% 0%);
 }
 
 .hero .row {
@@ -1734,4 +1732,29 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.menu {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: fit-content;
+  height: fit-content;
+  background-color: rgba(38, 51, 93, 0.9);
+  border: white 2px dotted;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.menu .menu-area-link {
+  color: #ffffff;
+  padding: 15px 22px;
+  text-decoration: none;
+}
+
+.menu .menu-area-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }

@@ -5,6 +5,7 @@ import SectionTeam from "./components/SectionTeam";
 import SectionSales from "./components/SectionSales";
 import SectionSubscribe from "./components/SectionSubscribe";
 import Footer from "./components/Footer";
+import Menu from "./components/Menu";
 
 function App() {
   const [path, setPath] = useState("#home");
@@ -43,6 +44,7 @@ function App() {
         {path === "#section-team" ? <SectionTeam path={path} /> : ""}
         {path === "#section-sales" ? <SectionSales path={path} /> : ""}
         {path === "#section-subscribe" ? <SectionSubscribe path={path} /> : ""}
+        <Menu handlePath={handlePath} />
       </main>
       <Footer />
     </>
