@@ -36,13 +36,12 @@
   margin-right: 21px;
   text-decoration: none;
   display: inline-block;
-  border-bottom: 2px dotted transparent;
-  transition: border-bottom 0.3s;
+  transition: all 0.3s;
 }
 
 .menu-area a:hover,
 .login-area a:hover {
-  border-bottom: 2px dotted #ffffff;
+  text-decoration: underline;
 }
 
 .login-area {
@@ -1734,7 +1733,7 @@
   transform: translate(-50%, -50%);
 }
 
-.menu {
+.menu-bottom {
   position: fixed;
   bottom: 0;
   left: 50%;
@@ -1749,12 +1748,16 @@
   z-index: 9999;
 }
 
-.menu .menu-area-link {
+.menu-bottom .menu-area-link {
   color: #ffffff;
   padding: 15px 22px;
   text-decoration: none;
 }
 
-.menu .menu-area-link:hover {
+.menu-bottom .menu-area-link:hover {
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menu-area-link.current-menu-item {
+  text-decoration: underline;
 }

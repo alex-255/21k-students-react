@@ -38,13 +38,13 @@ function App() {
 
   return (
     <>
-      <Header handlePath={handlePath} />
+      <Header handlePath={handlePath} path={path} />
       <main>
         {path === "#home" ? <Hero path={path} /> : ""}
         {path === "#section-team" ? <SectionTeam path={path} /> : ""}
         {path === "#section-sales" ? <SectionSales path={path} /> : ""}
         {path === "#section-subscribe" ? <SectionSubscribe path={path} /> : ""}
-        <Menu handlePath={handlePath} />
+        <Menu className="menu-bottom" path={path} handlePath={handlePath} />
       </main>
       <Footer />
     </>
